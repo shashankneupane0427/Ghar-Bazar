@@ -5,7 +5,6 @@ import {FaScreenpal, FaUpDown} from 'react-icons/fa6'
 import {FaEnvelope, FaInbox, FaList, FaMap, FaMapMarkedAlt, FaUser} from 'react-icons/fa'
 
 
-
 const About = () => {
   return (
     <section className='map-padd-container pb-16 xl:pb-28'>
