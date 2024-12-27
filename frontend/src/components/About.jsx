@@ -49,12 +49,12 @@ const About = () => {
        
         {/* INFO - LEFT - SIDE */}
         <div className='flex-1'>
-          <h2 className='h2'>Empowering You to Find Your Dream Home, Effortlessly</h2>
+          <h2 className='h2'>Simplifying Your Real Estate Journey Every Step of the Way</h2>
           <p>We’ve facilitated seamless property transactions, earned industry recognition, and built a trusted platform for discovering dream homes and investments</p>
           <div className='flex flex-col gap-6 mt-5'>
             <div className='flex gap-3'>
               <FaScreenpal className='text-secondary'/>
-              <p>Virtual property tours and viewings</p>
+              <p>In-app scheduling for property viewings</p>
             </div>
             <div className='flex gap-3'>
               <FaUpDown className='text-secondary'/>
@@ -62,15 +62,15 @@ const About = () => {
             </div>
             <div className='flex gap-3'>
               <FaMap className='text-secondary'/>
-              <p>Interactive floor plans and maps </p>
+              <p>User-friendly interface for smooth navigation </p>
             </div>
             <div className='flex gap-3'>
               <FaMapMarkedAlt className='text-secondary'/>
-              <p>Access to off-market properties</p>
+              <p>Detailed agent and retailor profiles</p>
             </div>
             <div className='flex gap-3'>
               <FaEnvelope className='text-secondary'/>
-              <p>Direct messaging with agents and owners</p>
+              <p>Access to off-market properties</p>
             </div>
           </div>
         </div>
