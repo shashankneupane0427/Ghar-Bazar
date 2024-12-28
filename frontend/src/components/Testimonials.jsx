@@ -1,5 +1,6 @@
   import React from 'react'
   import user1 from '../assets/testimonials/user1.png'
+  import user2 from '../assets/testimonials/user2.png'
   import {FaStar, FaCheck} from 'react-icons/fa'
   import property1 from '../assets/img1.png'
   import property2 from '../assets/img2.png'
@@ -57,11 +58,11 @@
               </div>
             </div>
             {/* TESTIMONIAL CARD */}
-            <div className='flex flex-col gap-1 rounded-lg p-4 bg-white ring-1 ring-slate-900/5'>
+            <div className='rounded-lg p-4 bg-white ring-1 ring-slate-900/5'>
               <div className='flexBetween'>
                 <div className='flexCenter gap-x-2'>
-                  <img src={user1} alt="userImg" height={44} width={44}className='rounded-full' />
-                  <h5 className='bold-14'>Izabella Stress</h5>
+                  <img src={user2} alt="userImg" height={44} width={44} className='rounded-full' />
+                  <h5 className='bold-14'>Sienna Killa</h5>
                 </div>
                 <div className='bg-secondary text-white rounded-full flexCenter gap-x-2 p-1 px-2 text-xs font-semibold'> 
                   <FaCheck/>
