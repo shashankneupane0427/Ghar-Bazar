@@ -3,8 +3,10 @@ import Searchbar from '../components/Searchbar';
 import useProperties from '../hooks/useProperties';
 
 const Listing = () => {
-    const [filter, setFilter] = useState();
-    const { data, isError, isLoading } = useProperties(); // Destructure from the object
+    const [filter, setFilter] = useState('');
+    const { data, isError, isLoading } = useProperties();
+    console.log(data);
+    
 
     return (
         <main className='my-24'>
@@ -15,7 +17,7 @@ const Listing = () => {
                     <div>
                         {isLoading && <p>Loading properties...</p>}
                         {isError && <p>Failed to load properties.</p>}
-                        {data && data.map(property => (
+                        {Array.isArray(data) && data.map(property => (
                             <div key={property.id}>
                                 <h3>{property.name}</h3>
                                 <p>{property.description}</p>
