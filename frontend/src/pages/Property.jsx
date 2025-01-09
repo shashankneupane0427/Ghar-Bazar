@@ -59,12 +59,12 @@ const Property = () => {
       <div className="xl:flexBetween gap-8">
         {/* LEFT SIDE */}
         <div className="flex-1">
-          <p className="flexStart gap-x-2">
+          <div className="flexStart gap-x-2">
             <FaLocationDot />
-            <div>
+            <span>
               {data?.address} {data?.city} {data?.country}
-            </div>
-          </p>
+            </span>
+          </div>
           <div className="flexBetween pt-3">
             <h4 className="bold-20 line-clamp-1">{data?.title}</h4>
             <div className=" bold-20">{data?.price}.00</div>
@@ -102,6 +102,7 @@ const Property = () => {
         </div>
         {/* RIGHT SIDE */}
         <div>
+          map
           <Map
           address={data?.address}
           country={data?.country}
