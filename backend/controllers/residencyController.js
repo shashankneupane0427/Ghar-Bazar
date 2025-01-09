@@ -56,7 +56,7 @@ export const getAllResidencies = asyncHandler(async (req, res) => {
       createdAt: "desc",
     }
   })
-  res.send({residencies})
+  res.send(residencies)
 })
 
 // CONTROLLER FUNCTION FOR GET A RESIDENCY BY ID
