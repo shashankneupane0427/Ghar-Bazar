@@ -102,7 +102,6 @@ const Property = () => {
         </div>
         {/* RIGHT SIDE */}
         <div>
-          map
           <Map
           address={data?.address}
           country={data?.country}

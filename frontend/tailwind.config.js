@@ -23,7 +23,7 @@ export default {
         },
       },
       screens: {
-        xs: "400px",
+        "xs": "400px",
         "3x1": "1680px",
         "4x1": "2200px",
       },

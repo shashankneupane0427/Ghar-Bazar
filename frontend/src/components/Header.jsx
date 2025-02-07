@@ -4,7 +4,9 @@ import logo from '../assets/logo.png'
 import {MdMenu, MdClose } from 'react-icons/md'
 import {LuUserRound} from 'react-icons/lu'
 import Navbar from './Navbar'
+import ProfileMenu from './ProfileMenu'
 import { useState, useEffect } from 'react'
+import { useAuth0 } from '@auth0/auth0-react'
 
 const Header = () => {
     const [active, setActive] = useState(false)
@@ -31,6 +33,8 @@ const Header = () => {
         }
     },[menuOpened]) // Effect runs when menuOpened changes
  
+    const {loginWithRedirect, isAuthenticated, user, logout} = useAuth0()
+
   return (
     <header className={`${active ? "py-1 bg-white shadow-md": "py-2"} max-padd-container fixed top-0 w-full left-0 right-0 z-50 transition-all duration-200`}>
         {/* CONTAINER */}
@@ -52,10 +56,11 @@ const Header = () => {
                 <div className='flexBetween gap-x-3 sm:gap-x-5 bold-16'>
                     {!menuOpened ? (<MdMenu onClick={toggleMenu} className='xl:hidden cursor-pointer text-3xl '/>): 
                    ( <MdClose  onClick={toggleMenu} className='xl:hidden cursor-pointer text-3xl '/>)}
-                    <button className='flexCenter gap-x-2 !px-5 btn-dark'>
+                    {!isAuthenticated ? <button onClick={loginWithRedirect} className='flexCenter gap-x-2 !px-5 btn-dark'>
                         <LuUserRound className='text-xl'/>
                         <span>Log In</span>
-                    </button>
+                    </button>: <ProfileMenu user = {user} logout = {logout}/>
+                    }
                 </div>
             </div>
     </header>
