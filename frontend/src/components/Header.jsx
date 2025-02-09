@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo.png'
+import logo from "../assets/testimonials/favicon-icon.png"
 import {MdMenu, MdClose } from 'react-icons/md'
 import {LuUserRound} from 'react-icons/lu'
 import Navbar from './Navbar'

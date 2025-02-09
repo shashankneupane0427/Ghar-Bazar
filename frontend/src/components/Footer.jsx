@@ -2,7 +2,7 @@ import React from 'react'
 import { FaMailBulk, FaPhone } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
 import { Link} from 'react-router-dom'
-import logo from "../assets/logo.png"
+import logo from "../assets/testimonials/favicon-icon.png"
 
 
 const Footer = () => {

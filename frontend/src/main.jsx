@@ -16,6 +16,7 @@ createRoot(document.getElementById('root')).render(
     audience="http://localhost:3000"
     scope = "openid profile email"
     >
+        
         <MantineProvider>
         <App/>
         </MantineProvider>

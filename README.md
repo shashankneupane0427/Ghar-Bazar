@@ -1,6 +1,6 @@
-# Real Estate Platform
+# Eco Home (A Real Estate Platform)
 
-<img src="./websiteimg.png" alt="Image">
+<img src="./frontend/src/assets/website image.png" alt="Image">
 
 ## Description
 A full-stack real estate platform built with the MERN stack (MongoDB, Express.js, React, Node.js) to help users discover, explore, and connect with properties seamlessly. Simplifying the journey to finding dream homes and investments.
